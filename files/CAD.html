@@ -9,23 +9,32 @@
 			<div id = "header">
 				<h1>MY DIGITAL PROTOTYPING WEBSITE</h1>
 			</div>
+			<div id = "subheader">
+				<h2>COMPUTER AIDED DESIGN</h2>
+			</div>
 			<div id = "content">
-				<div id = "nav">
-					<h2>Navigation Menu</h2>
-					<ul>
-						<li><a href = "index.html" >Home</a></li>
-						<li><a href = "About.html" >About</a></li>
-						<li><a href = "Safety.html" >Fablab Safety</a></li>
-						<li><a href = "Project.html" >Project Managment</a></li>
-						<li><a href = "WebVC.html" >Web & Version Control</a></li>
-						<li><a class = "selected" href = "CAD.html" >Computer Aided Design</a></li>
-						<li><a href = "3DPrinting.html" >3D Printing</a></li>
-						<li><a href = "Contact.html" >Contact</a></li>
-          </ul>
+				<div id="mySidenav" class="sidenav">
+  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href = "index.html" >Home</a>
+					<a href = "About.html" >About</a>
+					<a href = "Safety.html" >Fablab Safety</a>
+					<a href = "Project.html" >Project Managment</a>
+					<a href = "WebVC.html" >Web & Version <br> Control</a>
+					<a class = "selected" href = "CAD.html" >Computer Aided <br> Design</a>
+					<a href = "3DPrinting.html" >3D Printing</a>
+					<a href = "Contact.html" >Contact</a>
 				</div>
-				<div id = "main">
-					<h2 style = "font-size:50px;">Computer Aided Design</h2>
-          <p></p>
+				<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<script>
+				function openNav() {
+				  document.getElementById("mySidenav").style.width = "280px";
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				}
+				</script>
+				<div id = "main" class = "overlap">
 				  <h1>Webpage in Development...</h1>
 				</div>
 			</div>
