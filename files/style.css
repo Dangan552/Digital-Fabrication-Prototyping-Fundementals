@@ -15,6 +15,16 @@ a{
 	color: SlateBlue;
 }
 
+.saferules ol{
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.saferules ul{
+	font-size: 15px;
+	line-height: 20px;
+}
+
 h1, h2, h3{
 	margin: 0;
 }
@@ -25,6 +35,18 @@ h1{
 
 h2{
 	font-size: 35px;
+}
+
+h3{
+	font-size: 25px;
+}
+
+td{
+	vertical-align: top;
+}
+
+hr{
+	color: black;
 }
 
 #container{
@@ -43,7 +65,7 @@ h2{
 }
 
 #subheader{
-	background-color:#0B307A;
+	background-color:#163167;
 	color: white;
 	text-align: center;
 	padding: 5px;
@@ -54,8 +76,8 @@ h2{
 }
 
 #main{
-	width: 1190px;
-	left: 50px;
+	width: 1350px;
+	left: 80px;
 	position: relative;
 	padding: 10px;
 }
@@ -77,8 +99,9 @@ h2{
   height: 100%;
   width: 0;
   position: fixed;
+	
+	top: 128px;
   z-index: 1;
-  top: 128px;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
@@ -104,15 +127,19 @@ h2{
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 40px;
   margin-left: 50px;
+}
+
+.htmlexp li{
+	padding: 10px;
+}
+
+.cssexp li{
+	padding: 10px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-#profile{
-	padding: 10px;
 }

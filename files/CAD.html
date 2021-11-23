@@ -13,34 +13,74 @@
 				<h2>COMPUTER AIDED DESIGN</h2>
 			</div>
 			<div id = "content">
-				<div id="mySidenav" class="sidenav">
+				<div id="Sidenav" class="sidenav">
   				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<a href = "index.html" >Home</a>
 					<a href = "About.html" >About</a>
 					<a href = "Safety.html" >Fablab Safety</a>
 					<a href = "Project.html" >Project Managment</a>
-					<a href = "WebVC.html" >Web & Version <br> Control</a>
-					<a class = "selected" href = "CAD.html" >Computer Aided <br> Design</a>
+					<a href = "WebVC.html" >Website Development</a>
+					<a class = "selected" href = "CAD.html" >Computer Aided Design</a>
 					<a href = "3DPrinting.html" >3D Printing</a>
-					<a href = "Contact.html" >Contact</a>
+					<a href = "LaserCut.html" >Laser Cutting</a>
+					<a href = "EmbProg.html" >Embeded Programming</a>
 				</div>
-				<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				<script>
 				function openNav() {
-				  document.getElementById("mySidenav").style.width = "280px";
+				  document.getElementById("Sidenav").style.width = "350px";
 				}
 
 				function closeNav() {
-				  document.getElementById("mySidenav").style.width = "0";
+				  document.getElementById("Sidenav").style.width = "0";
 				}
 				</script>
 				<div id = "main" class = "overlap">
-				  <h1>Webpage in Development...</h1>
+					<h2>Introduction</h2>
+					<p>Computer Aided Design or CAD is using computer software such as <a href = "https://www.gimp.org/" >GIMP</a>,
+					<a href = "https://inkscape.org/" >Inkscape</a>, and <a href = "https://www.autodesk.com.sg/products/fusion-360/overview" >Fusion 360</a>
+					to aid in a design process. These software can be used to create 2D drawings or 3D models and are often used by engineerings to visualize
+					the construction of their products. In this webpage, I will be going through some basic tutorials using of the aforementioned softwares.</p>
+					<hr>
+					<h2>2D Design</h2>
+					<p>2D designs are used for laser cutting and engraving and can be split into two categories, raster and vector.
+					Raster images are defined by pixels and the quality of a raster image depends on the number of pixels it has. Vector images on the
+					other hand are created by lines defined through the use of mathematics. The software GIMP is used for the former while Inkscape
+				  is used for the latter.</p>
+					<img src="../images/RvsV.png" alt="Raster vs Vector" width="525" height="300">
+					<h3>2D Raster</h3>
+					<p>I will be demonstrating a simple use of the GIMP software on how to remove the background of an image and switch it with another
+					using the images of a <a href = "../images/727.jpg" >plane</a> and a <a href = "../images/storm.jpg" >stormy sky</a>.</p>
+					<ol>
+						<li>Choose an image and open it in GIMP.</li>
+						<li>Go to the <b>Layers</b> tab, select <b>Transperancy</b> and click on <b>Add Alpha Channel</b> to allow the layer to have transperancy.</li>
+						<li>Use the <b>Free Select Tool</b> and trace out the image of the plane.</li>
+						<li>Go to the <b>Select</b> tab and click on <b>Invert</b> so that the background is now selected.</li>
+						<li>Go to the <b>Edit</b> tab and click on clear to delete the background.</li>
+						<li>Use the <b>Smudge Tool</b> to make the edges of the plane to make it look more natural and when done, save the image.</li>
+						<br>
+						<img src="../images/RasCol1.jpg" alt="Raster1" width="600" height="400">
+						<img src="../images/RasCol2.jpg" alt="Raster2" width="600" height="400">
+						<li>Choose your new background image, open it in another tab.</li>
+						<li>Go to <b>File</b> and click on <b>Open as Layers</b> to open the saved copy of the plane.</li>
+						<li>Scale your the image of the plane to fit into your new background.</li>
+						<li>Make sure that your plane layer is onto of the background layer.</li>
+						<br>
+						<img src="../images/RasCol3.jpg" alt="Raster3" width="600" height="400">
+						<img src="../images/RasterFinal.jpg" alt="RasterFinal" width="600" height="400">
+			  	</ol>
+					<p>And here is the picture of a plane flying in a storny sky.</p>
+					<h3>2D Vector</h3>
+					<p>[INSERT TEXT]</p>
+					<p>[INSERT IMAGE]</p>
+					<hr>
+					<h2>3D CAD</h2>
+					<p>3D CAD is mostly used for 3D printing or computer aided machining. </p>
+					<img src="../images/Pawn.jpg" alt="3D CAD" width="700" height="400">
 				</div>
 			</div>
 			<div id = "footer">
 				Copyright &copy; 2021 Daniel Gan.
 			</div>
-
 	<body>
 <html>

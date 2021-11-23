@@ -10,37 +10,104 @@
 				<h1>MY DIGITAL PROTOTYPING WEBSITE</h1>
 			</div>
 			<div id = "subheader">
-				<h2>SAFETY</h2>
+				<h2>FABLAB SAFETY</h2>
 			</div>
 			<div id = "content">
-				<div id="mySidenav" class="sidenav">
+				<div id="Sidenav" class="sidenav">
   				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<a href = "index.html" >Home</a>
 					<a href = "About.html" >About</a>
 					<a class = "selected" href = "Safety.html" >Fablab Safety</a>
 					<a href = "Project.html" >Project Managment</a>
-					<a href = "WebVC.html" >Web & Version <br> Control</a>
-					<a href = "CAD.html" >Computer Aided <br> Design</a>
+					<a href = "WebVC.html" >Website Development</a>
+					<a href = "CAD.html" >Computer Aided Design</a>
 					<a href = "3DPrinting.html" >3D Printing</a>
-					<a href = "Contact.html" >Contact</a>
+					<a href = "LaserCut.html" >Laser Cutting</a>
+					<a href = "EmbProg.html" >Embeded Programming</a>
 				</div>
-				<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				<script>
 				function openNav() {
-				  document.getElementById("mySidenav").style.width = "280px";
+				  document.getElementById("Sidenav").style.width = "350px";
 				}
 
 				function closeNav() {
-				  document.getElementById("mySidenav").style.width = "0";
+				  document.getElementById("Sidenav").style.width = "0";
 				}
 				</script>
 				<div id = "main" class = "overlap">
-				  <h1>Webpage in Development...</h1>
+				  <h2>Introduction</h2>
+					<p>Safety is paramount in the fablab as one misstep may cause serious injuries not only to youself but others as well.
+					In this webpage, I would be taking you through the basic saftey rules, hazards and symbols you need	to know in the fablab.</p>
+					<hr>
+					<div id = "SafeRules" class = "saferules">
+					<h2>Basic Saftey Rules</h2>
+					<ol>
+						<li>
+							Proper attaire to be worn in lab includes:
+							<ul>
+								<li>Wear Long pants & covered shoes.</li>
+								<li>No long sleeved shirts.</li>
+								<li>No adornments or loose lccessories.</li>
+								<li>Long hair must be tied up.</li>
+							</ul>
+						</li>
+						<li>Report all injuries no matter how minor to the staff in charge.</li>
+						<li>Do not operate any machinery unless trained in its safe usage and given permission to do so.</li>
+						<li>
+							Emergency Procedures:
+							<ul>
+								<li>If the alarm sounds, stop work immediatly and wait for staff in charge.</li>
+								<li>If a fire starts in the lab inform everyone immediatly and leave the lab.</li>
+								<li>When reporting emergencies please seek the help of the staff.</li>
+							</ul>
+							In the event of staff absence please call:
+							<ul>
+								<li>995 for Ambulance & SCD.F</li>
+								<li>999 for Police.</li>
+								<li>6772-1234 for SP Emergency Hotline.</li>
+							</ul>
+						</li>
+						<li>
+							Keep the workplace neat and orderly after use by:
+						<ul>
+							<li>Returning tools to their designated storage areas.</li>
+							<li>Cleaning up debris and chips.</li>
+							<li>Recycling leftover materials.</li>
+						</ul>
+						This reduces the risk of accidents occuring due to a cluttered workspace.
+					</li>
+					<li>Report all unsafe conditions or acts to your staff in charge.</li>
+					<li>Wear Personal Proctective Equipment (PPE) when appropriate.</li>
+					<li>Strictly follow machine operating procedures.</li>
+					</ol>
+					<hr>
+					<h2>Symbols & Placards</h2>
+					<p>Here are some common symbols and saftey placards that you may see around the workshop. Please familiarise yourslef with them.</p>
+					<img src="../images/Symbols.jpg" alt="Symbols" width="650" height="500">
+				  <img src="../images/Placards.jpg" alt="Placards" width="650" height="500">
+					<hr>
+					<h2> Common Hazards</h2>
+					<p> Here are some common hazards that may occur when working in the workshop: </p>
+					<div id = "Hazards">
+					<table>
+						<tr>
+							<td><b>1. Mechanical Hazards</b><td>
+							<td><b>2. Electrical Hazards</b><td>
+							<td><b>3. Chemical Hazards</b><td>
+						</tr>
+						<tr>
+							<td><img src="../images/MechHaz.jpg" alt="MechHaz" width="400" height="300"><td>
+							<td><img src="../images/ElecHaz.jpg" alt="ElecHaz" width="450" height="300"><td>
+							<td><img src="../images/ChemHaz.jpg" alt="ChemHaz" width="400" height="300"><td>
+						</tr>
+					</table>
+				</div>
+				  </div>
 				</div>
 			</div>
 			<div id = "footer">
 				Copyright &copy; 2021 Daniel Gan.
 			</div>
-
 	<body>
 <html>

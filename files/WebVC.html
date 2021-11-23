@@ -13,35 +13,116 @@
 				<h2>WEBSITE & VERSION CONTROL</h2>
 			</div>
 			<div id = "content">
-				<div id="mySidenav" class="sidenav">
+				<div id="Sidenav" class="sidenav">
   				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 					<a href = "index.html" >Home</a>
 					<a href = "About.html" >About</a>
 					<a href = "Safety.html" >Fablab Safety</a>
 					<a href = "Project.html" >Project Managment</a>
-					<a class = "selected" href = "WebVC.html" >Web & Version <br> Control</a>
-					<a href = "CAD.html" >Computer Aided <br> Design</a>
+					<a class = "selected" href = "WebVC.html" >Website Development</a>
+					<a href = "CAD.html" >Computer Aided Design</a>
 					<a href = "3DPrinting.html" >3D Printing</a>
-					<a href = "Contact.html" >Contact</a>
+					<a href = "LaserCut.html" >Laser Cutting</a>
+					<a href = "EmbProg.html" >Embeded Programming</a>
 				</div>
-				<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
 				<script>
 				function openNav() {
-				  document.getElementById("mySidenav").style.width = "280px";
+				  document.getElementById("Sidenav").style.width = "350px";
 				}
 
 				function closeNav() {
-				  document.getElementById("mySidenav").style.width = "0";
+				  document.getElementById("Sidenav").style.width = "0";
 				}
 				</script>
 				<div id = "main" class = "overlap">
-
-				  <h1>Webpage in Development...</h1>
+				  <h2>Introduction</h2>
+					<p>The development of this website uses a combination of HTML, CSS, and Javascript. HTML is the standard markup language
+					 used to format the structure and content of websites. CSS on the other hand, is used to style a HTML document and describe
+					 the presentation of a website. Finally, Javascript is another coding language used to program more complex features and simple
+					 animations in the website. My knowledge about coding websites can be attributed to <a href = "https://www.w3schools.com/default.asp" >W3 Schools</a>
+					 and some tutorial videos from <a href = "https://www.youtube.com/channel/UCc1Pn7FxieMohCZFPYEbs7w" >Jake Wright</a>, the latter
+					 whose instruction allowed me to create my first website. In this webpage, I would be going through the development history of
+					 my website and some of the specific features i added to it. </p>
+					<hr>
+					<h2>Basic Website</h2>
+					<p>This is the first iteration of my website after watching the Jake Wright Tutorial videos and I mostly just followed his
+					instructions exactly.</p>
+					<table>
+					<tr>
+						<td><img src="../images/WebsiteImg/BasicWebsite.jpg" alt="BWV1" width="450" height="300"></td>
+						<td><img src="../images/WebsiteImg/BWV1HTML1.jpg" alt="BWV1HTML1" width="450" height="300"></td>
+					</tr>
+				  </table>
+					<table>
+						<tr>
+							<td><img src="../images/WebsiteImg/BWV1HTML2.jpg" alt="BWV1HTML2" width="600" height="300"></td>
+							<td><img src="../images/WebsiteImg/BWV1CSS1.jpg" alt="BWV1CSS1" width="300" height="300"></td>
+							<td><img src="../images/WebsiteImg/BWV1CSS2.jpg" alt="BWV1CSS2" width="300" height="300"></td>
+						</tr>
+					</table>
+					<hr>
+					<h2>Current Website</h2>
+					<p> After numerous modifications made to the basic website, the final product is ready! I switched to a bluish technology theme but
+				  the main structure of the website is the largely the same as the basic website that I first made. The only changes that I made
+					to the website structure was the addition of a sub-header that indictaed which webpage the user was currently on and an animated,
+					closable side navigation menu. </p>
+					<p> [INSERT IMAGE] </p>
+					<hr>
+					<h2>Animated Navigation Menu</h2>
+					<p> The creation of the animated navigation menu was the only instance where I used javascript. Whilst it was easy to just copy and paste
+					the feature from W3 schools, it took me some time to undertsand and modify the navigation menu. The animated nagigation menu consisted of
+					the navigation menu itself, an open icon, and close button. The making of the menu can be split into 3 parts: HTML, CSS, and Javascript. </p>
+					<h3>1. HTML</h3>
+					<p>The majority of the HTML code for the navigation bar is similar to that of the basic website. The only difference here is extra the code
+					needed to open and close the navigation menu. I will explain the code in two parts, the close button and menu icon. </p>
+					<div id ="HtmlExp" class ="htmlexp">
+						<ul>
+							<li><b>CLOSE BUTTON</b><br>
+							<b>javascript:void(0)</b> is used to ensure that the when the link is pressed, it does not navigate to another page or refresh the page. <br>
+							The class for the close button is created and the <b>onclick</b> function is used to execute a script to close the menu.</li>
+							<li><b>MENU ICON</b><br>
+							Inside the span tag, <b>& # 9 7 7 6 ;</b> is used to create the menu icon.<br>
+							The font size is defined and <b>cursor:pointer</b> indicates that the icon is a link.<br>
+							Lastly, we see <b>onclick</b> again to execute the script needed to open the navigation menu.</li>
+							<p><img src="../images/WebsiteImg/WebHtml.jpg" alt="WebHtml" width="700" height="400"></p>
+					  </ul>
+			  	</div>
+					<h3>2. CSS</h3>
+					<p>In the CSS, I styled the container for the menu, the content and the close button. I will just be explaining the important bits below.</p>
+					<table>
+						<tr>
+							<td>
+								<div id = "CssExp" class = "cssexp">
+									<ul>
+										<li><b>CONTAINER</b><br>
+										<b>poistion: fixed /top: 128px</b> makes the menu stay at 128px from the top relative to viewport.<br>
+										<b>z-index:1</b> makes the menu stack order greater and places it in front of the rest of the webpage.<br>
+										<b>overflow-x: hidden</b> makes the content of the menu invisible when it is closed.<br>
+										<b>transition: 0.5s</b> makes the menu open or close in 0.5s.<br>
+										<b>white-space: nowrap</b> prevents the content of the menu from being moving when opening or closing.</li>
+										<li><b>CONTENT</b><br>
+										<b>display: block</b> displays the menu contents in a column.<br>
+										<b>.sidenav a:hover /color: #f1f1f1;</b> makes the menu content light up white when the cursor hovers over it.</li>
+										<li><b>CLOSE BUTTON</b><br>
+										<b>position: absolute</b> makes the close button stay in the position relative to the menu.</li>
+									</ul>
+								 </div>
+					  	<td><img src="../images/WebsiteImg/WebCss1.jpg" alt="WebCss1" width="200" height="400"></td>
+							<td><img src="../images/WebsiteImg/WebCss2.jpg" alt="WebCss1" width="200" height="200"></td>
+					  </tr>
+					 </table>
+					 <h3>3. Javascript</h3>
+					 <p>The use of Javascript is to animate the side bar or to open and close it. First a <b>script</b> tag is used to embed
+					 Javascript or specify the use of it in a HTML document. Then I create two <b>functions</b> which i call <b>openNav()</b> & <b>closeNav()</b>.
+           Inside them I write <b>document.getElementById("Sidenav")</b> which returns the Sidenav element from my CSS file and <b>.style.width</b>
+					 which determines the width of the navigation menu. And its done, the animated navigation menu can be activated anytime the icon
+					 is clicked.</p>
+					 <img src="../images/WebsiteImg/WebJava.jpg" alt="WebJava" width="550" height="200"></td>
 				</div>
 			</div>
 			<div id = "footer">
 				Copyright &copy; 2021 Daniel Gan.
 			</div>
-
 	<body>
 <html>
