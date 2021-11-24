@@ -46,7 +46,7 @@ td{
 }
 
 hr{
-	color: black;
+	background-color: #87CEFA;
 }
 
 #container{
@@ -99,7 +99,7 @@ hr{
   height: 100%;
   width: 0;
   position: fixed;
-	
+
 	top: 128px;
   z-index: 1;
   left: 0;
