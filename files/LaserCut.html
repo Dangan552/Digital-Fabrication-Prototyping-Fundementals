@@ -44,33 +44,40 @@
 					<img src="../images/MusicBoxImg/MBFinal.jpg" alt="Music Box" width="600" height="400">
 					<hr>
 					<h2>Music Box Design</h2>
-					<p>Here are the parameters used for the Music Boxusing the <b>parameters</b> function:</p>
+					<p>The music box design will be done on <a href = "https://www.autodesk.com.sg/products/fusion-360/overview" >Fusion 360</a>.</p>
+					<p>Here are the parameters used for the Music Box using the <b>parameters</b> function:</p>
 					<img src="../images/MusicBoxImg/MBPara.jpg" alt="Music Box Parameters" width="1000" height="200">
-					<p>Next are the sketches for the base and front sides of the box. The dimensions for the teeth can be calculated using <b>len/ Nlen</b>.</p>
+					<p>Next are the sketches for the base and front sides of the box. The teeth can be sketched using the <b>rectangle</b> command and dimensioned using <b>len/ Nlen</b>.
+					The teeth can be then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
 					<img src="../images/MusicBoxImg/MBBase.jpg" alt="Music Box Base Sketch" width="600" height="400">
 					<img src="../images/MusicBoxImg/MBFB.jpg" alt="Music Box Front & Back" width="600" height="400">
-					<p>Extrude both the base and front by thk before using the <b>combine</b> function to make sure that your teeth dosent join together.</p>
+					<p>Extrude both the base and front by <b>thk</b> before using the <b>combine</b> function to make sure that your teeth dosent join together.</p>
 					<img src="../images/MusicBoxImg/MBBaseSide.jpg" alt="Music Box Base & Front" width="600" height="400">
 					<img src="../images/MusicBoxImg/MBCombine1.jpg" alt="Music Box Combine 1" width="600" height="400">
-					<p>Copy the front wall and move it to the opposite side to make the back wall. Remember to use the <b>combine</b> function again for your back wall.<p/>
-					<img src="../images/MusicBoxImg/MBMove1.jpg" alt="Music Box Move 1" width="600" height="400">
-					<img src="../images/MusicBoxImg/MBBaseSide2.jpg" alt="Music Box Base & Front 2" width="600" height="400">
-					<p>Sketch the right wall like this. Calculations for the teeth on the bottom uses <b>width/Nwid</b> and <br>height/Nheight</b> for the sides..</p>
+					<p>Copy and move the front wall to the opposite side of the box using the <b>Copy/Move (Point to Point)</b> function to make the back wall.
+					Remember to use the <b>combine</b> function again to get the teeth for your back wall.<p/>
+					<img src="../images/MusicBoxImg/MBMove1.jpg" alt="Music Box Move 1" width="600" height="425">
+					<img src="../images/MusicBoxImg/MBBaseSide2.jpg" alt="Music Box Base & Front 2" width="600" height="425">
+					<p>Sketch and extrude the right wall like this. Calculations for the teeth on the bottom uses <b>width/Nwid</b> and <b>height/Nheight</b> for the sides.
+					Constraints used here are the same as the ones for the front wall.</p>
 					<img src="../images/MusicBoxImg/MBLR.jpg" alt="Music Box Right Side" width="600" height="400">
-					<p>Copy and move the right wall to the opposite side to make the left wall and use the <b>combine</b> function.</p>
-					<img src="../images/MusicBoxImg/MBMove2.jpg" alt="Music Box Move 2" width="600" height="400">
-					<img src="../images/MusicBoxImg/MBCombine2.jpg" alt="Music Box Combine 2" width="600" height="400">
-					<p>Sketch the lid of the music box like this before extruding it.</p>
-					<img src="../images/MusicBoxImg/MBLid.jpg" alt="Music Box Lid" width="600" height="400">
-					<img src="../images/MusicBoxImg/MBLid2.jpg" alt="Music Box Lid 2" width="600" height="400">
-					<p>Sketch the hinge like this before extruding it. Make a 5mm hole centred around the hinge and do the same for the other side.</p>
+					<img src="../images/MusicBoxImg/MBLREX.jpg" alt="Music Box Right Side Extrude" width="600" height="400">
+					<p>Copy and move the right wall to the opposite side of the box using the <b>Copy/Move (Point to Point)</b> again to make the left wall
+				  and use the <b>combine</b> function to get all the teeth.</p>
+					<img src="../images/MusicBoxImg/MBMove2.jpg" alt="Music Box Move 2" width="600" height="450">
+					<img src="../images/MusicBoxImg/MBCombine2.jpg" alt="Music Box Combine 2" width="600" height="450">
+					<p>Sketch the lid of the music box like this before extruding it by <b>thk</b>.</p>
+					<img src="../images/MusicBoxImg/MBLid.jpg" alt="Music Box Lid" width="600" height="450">
+					<img src="../images/MusicBoxImg/MBLid2.jpg" alt="Music Box Lid 2" width="600" height="450">
+					<p>Sketch the hinge like this before extruding it by <b>thk</b>. Make a <b>5mm</b> hole centred around the hinge and do the same for the other side.</p>
 					<img src="../images/MusicBoxImg/MBHinge.jpg" alt="Music Box Hinge" width="600" height="400">
 					<img src="../images/MusicBoxImg/MBHinge2.jpg" alt="Music Box Hinge 2" width="600" height="400">
-					<p>Use the <b>combine</b> function again before inserting the image of a <a href = "../images/MusicBoxImg/MusicNote.png" >musical note</a>.</p>
-					<img src="../images/MusicBoxImg/MBCombine3.jpg" alt="Music Box Combine3" width="600" height="400">
-					<img src="../images/MusicBoxImg/MBEng1.jpg" alt="Music Box Engrave" width="600" height="400">
-					<p>Trace the outline of the image using <b>line</b> and <b>conic curve</b> functions before extruding it down to make a cut.
-					Lastly, sketch a hole like this on the right wall and extrude it in to make a hole.</p>
+					<p>Use the <b>combine</b> function again before inserting the image of a <a href = "../images/MusicBoxImg/MusicNote.png" >musical note</a>
+					onto the lid of your music box.</p>
+					<img src="../images/MusicBoxImg/MBCombine3.jpg" alt="Music Box Combine3" width="600" height="450">
+					<img src="../images/MusicBoxImg/MBEng1.jpg" alt="Music Box Engrave" width="600" height="450">
+					<p>Trace the outline of the image using <b>line</b> and <b>conic curve</b> functions before extruding it down by <b>thk</b> to make a cut.
+					Lastly, sketch a circle like this on the right wall and extrude it in by <b>thk</b> to make a hole.</p>
 					<img src="../images/MusicBoxImg/MBEng2.jpg" alt="Music Box Engrave 2" width="600" height="400">
 					<img src="../images/MusicBoxImg/MBCrank.jpg" alt="Music Box Crank" width="600" height="400">
 					<p>So here is your completed Music Box Design!</p>
@@ -80,8 +87,7 @@
 					<p>Export all the sketchs of the music box as <b>DXF</b> and paste them onto <a href = "https://inkscape.org/" >Inkscape</a>.</p>
 					<img src="../images/MusicBoxImg/MBLCExport.jpg" alt="Music Box Laser Cut Export" width="600" height="400">
 					<img src="../images/MusicBoxImg/MBLC2D.jpg" alt="Music Box 2D" width="600" height="400">
-					<p>[INSERT TEXT]</p>
-					<p>[INSERT IMAGE]</p>
+					<h2>To be Continued....</h2>
 				</div>
 			</div>
 			<div id = "footer">
