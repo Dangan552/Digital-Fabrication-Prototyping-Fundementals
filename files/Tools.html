@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mywebsite</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css"/>
+	<head>
+	<body>
+		<div id = "container">
+			<div id = "header">
+				<h1>MY DIGITAL PROTOTYPING WEBSITE</h1>
+			</div>
+			<div id = "subheader">
+				<h2>TOOLS</h2>
+			</div>
+			<div id = "content">
+				<div id="Sidenav" class="sidenav">
+  				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href = "index.html" >Home</a>
+					<a href = "About.html" >About</a>
+					<a href = "Safety.html" >Fablab Safety</a>
+					<a href = "Project.html" >Project Managment</a>
+					<a href = "WebVC.html" >Website Development</a>
+					<a href = "CAD.html" >Computer Aided Design</a>
+					<a href = "3DPrinting.html" >3D Printing</a>
+					<a href = "LaserCut.html" >Laser Cutting</a>
+					<a href = "EmbProg.html" >Embedded Programming</a>
+					<a href = "FinalProject.html" >Final Project</a>
+				  <a class = "selected" href = "Tools.html" >Tools</a>
+				</div>
+				<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<script>
+				function openNav() {
+				  document.getElementById("Sidenav").style.width = "350px";
+				}
+
+				function closeNav() {
+				  document.getElementById("Sidenav").style.width = "0";
+				}
+				</script>
+				<div id = "main" class = "overlap">
+					<h2>Introduction</h2>
+					<p>In this webpage, I will be going through the list of software that was used in the creation of this website.</p>
+				  <div id = "Tools">
+						<table>
+							<tr>
+								<th>Purpose</th>
+								<th>Choice</th>
+								<th>Reasons</th>
+							</tr>
+							<tr>
+								<td>Text Editor</td>
+								<td><a href = "https://atom.io/">Atom</a></td>
+								<td>A text editor with a soothing theme that grants great language and syntax support.</td>
+							</tr>
+							<tr>
+								<td>Raster Editor</td>
+								<td><a href = "https://www.gimp.org/">GIMP</a></td>
+								<td>It is an easy to use software for beginners due to its small learning curve and provides all the essential tools
+							  and features for free. Recomended by Lecturer.</td>
+							</tr>
+							<tr>
+								<td>Vector Editor</td>
+								<td><a href = "https://inkscape.org/">Inkscape</a></td>
+								<td>The best free software to use for beginners in vector editing as it is easy to use. Reccomended by Lecturer.</td>
+							</tr>
+							<tr>
+								<td>CAD</td>
+								<td><a href = "https://www.autodesk.com.sg/products/fusion-360/overview">Fusion 360</a></td>
+								<td>One of the most popular CAD tools availabe, Fusion 360 is an easy to use free software. Recommended by Lecturer.</td>
+							</tr>
+							<tr>
+								<td>Screen Capture</td>
+								<td><a href = "https://www.microsoft.com/en-us/p/snip-sketch/9mz95kl8mr0l?activetab=pivot:overviewtab">Windows Snip & Sketch</td>
+								<td>Having used this tool for many years, I can say that it is the easiest tool to use for screen capture.</td>
+							</tr>
+							<tr>
+								<td>IDE</td>
+								<td><a href = "https://www.arduino.cc/en/software">Arduino</a></td>
+								<td>I have extensive experience in using Arduino thanks to the various digital protoyping projects that i have done in my course.</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id = "footer">
+				Copyright &copy; 2021 Daniel Gan.
+			</div>
+	<body>
+<html>

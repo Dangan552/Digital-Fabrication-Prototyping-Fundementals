@@ -25,6 +25,28 @@ a{
 	line-height: 20px;
 }
 
+#Tools {
+	font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Tools td, #Tools th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Tools tr {background-color: white;}
+
+#Tools th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  background-color: #163167;
+  color: white;
+}
+
 h1, h2, h3{
 	margin: 0;
 }
