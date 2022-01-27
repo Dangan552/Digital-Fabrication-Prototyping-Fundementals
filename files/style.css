@@ -25,49 +25,27 @@ a{
 	line-height: 20px;
 }
 
-#IOTable {
+#Table {
 	font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#IOTable td, #IOTable th {
+#Table td, #Table th {
   border: 1px solid #ddd;
   padding: 8px;
 	text-align: left;
 }
 
-#IOTable th {
+#Table th {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: black;
-  color: white;
-}
-
-#IOTable tr {background-color: white;}
-
-#Tools {
-	font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#Tools td, #Tools th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#Tools tr {background-color: white;}
-
-#Tools th {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
   background-color: #163167;
   color: white;
 }
+
+#Table tr {background-color: white;}
 
 h1, h2, h3{
 	margin: 0;
