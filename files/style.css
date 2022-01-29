@@ -47,7 +47,7 @@ a{
 
 #Table tr {background-color: white;}
 
-h1, h2, h3{
+h1, h2, h3, h4{
 	margin: 0;
 }
 
@@ -57,10 +57,16 @@ h1{
 
 h2{
 	font-size: 35px;
+	text-decoration: underline;
 }
 
 h3{
-	font-size:30px;
+	font-size:25px;
+	text-decoration: underline;
+}
+
+h4{
+	font-size: 40px;
 }
 
 td{
@@ -69,6 +75,7 @@ td{
 
 hr{
 	background-color: #87CEFA;
+	border-width:0;
 }
 
 #container{
