@@ -41,46 +41,34 @@
 				  <h2>Introduction</h2>
 					<p>Embedded programming is the writing of code to control machines and devices through embdedded systems.
           Embedded systems are computer systems that have a dedicated function within a larger electronic or mechanical system to perform a specifc task.
-					One of these emdedded system devices are Arduino boards. In this webpage, I will go through arduino hardware, programming and some basic
-					input and output (I/O) devices.</p>
+					One of these emdedded system devices are Arduino boards. In this webpage, I will go through the arduino hardware, some basic
+					input and output (I/O) devices, and how to program the Arduino along with some examples.</p>
 					<hr>
           <h2>Arduino Hardware</h2>
 					<p>Arduino systems is a hardware and software company that sells programmable circuit boards and software. The software and hardware
 					are open source and are used to build electronics projects. In this module, we would primarily be using the Arduino Uno board.
 					The Arduino Uno is the most common micro controller to use for projects and it possesses an Atmel Atmega328P processor along with
-					sockets for interfacing and power. You can see further specifications and images below. </p>
-					<img src="../images/EmbedSysImg/AUSpec1.jpg" alt="Arduino Spec 1" width="450" height="300">
-					<img src="../images/EmbedSysImg/AUSpec2.png" alt="Arduino Spec 2" width="450" height="300">
-					<hr>
-					<h2>Arduino Programming</h2>
-					<p>Using the <a href = "https://www.arduino.cc/en/software">Arduino IDE</a> software, you can write your code, compile it, upload it to your board, and see your project come top life.
-          But first, you need to connect your Arduino Uno board to your computer and setup the IDE. Make sure you are using the correct board and check the port the board is connected to. </p>
-					<img src="../images/EmbedSysImg/AUS1.jpg" alt="Arduino Software 1" width="550" height="300">
-					<img src="../images/EmbedSysImg/AUS2.jpg" alt="Arduino Software 2" width="450" height="300">
-					<p>When writing your program, Arduino would prompt you to do it in the <b>setup</b> and <b>loop</b> functions. Code in the setup function is only executed <b>once</b> after each powerup
-					or reset of the Arduino Uno whilst the code in the loop function is executed <b>infinetly</b> in a loop.
-					<img src="../images/EmbedSysImg/AUS3.jpg" alt="Arduino Software 3" width="550" height="300">
-					<p>Arduino has an extensive <a href = "https://www.arduino.cc/reference/en/">lanaguage reference list</a> but for now, we will just go through some basic Arduino functions to program
-					dsome I/O devices.</p>
-					<ul>
-						<li><b>digitalRead()</b>: Reads the value from a specified digital pin, either HIGH or LOW.</li>
-						<li><b>digitalWrite()</b>: Write a HIGH or a LOW value to a digital pin.</li>
-						<li><b>pinMode()</b>: Configures the specified pin to behave either as an input or an output.</li>
-						<li><b>delay()</b>: Pauses the program for the amount of time (in milliseconds) specified as parameter. (1000 ms = 1s)</li>
-					</ul>
-					<p>Here are some practical applications of the functions on a physical arduino board and in tinkercard,
-					a webapp that can be used to simulate circuit designs. They are the Blinking LED and Blinking LED with Switch circuit designs.</p>
-					<ul>
-						<li><b>Blinking LED</b></li><br>
-					  <img src="../images/EmbedSysImg/AUS4.jpg" alt="Arduino Software 4" width="250" height="350">
-						<video width=465px src="../images/EmbedSysImg/AUS5.mp4" controls></video>
-					  <video width=840px src="../images/EmbedSysImg/AUSVid1.webm" controls></video>
-						<hr>
-					  <li><b>Blinking LED With Switch</b></li><br>
-						<img src="../images/EmbedSysImg/AUS6.jpg" alt="Arduino Software 6" width="250" height="400">
-						<video width=550px src="../images/EmbedSysImg/AUS7.mp4" controls></video>
-						<video width=930px src="../images/EmbedSysImg/AUSVid2.webm" controls></video>
-					</ul>
+					sockets for interfacing and power. You can see the general specifications of the Arduino Uno in the image below. </p>
+					<table>
+						<tr>
+							<td><img src="../images/EmbedSysImg/AUSpec1.jpg" alt="Arduino Spec 1" width="450" height="300"></td>
+							<td><p>Here are some things to take note of though:</p>
+								<ul>
+									<li>The Arduino operates at 5V so it can only power devices within this voltage threshold.</li>
+									<li>The Arduino may be powered using either the USB port or batteries. The USB port can be connected to either a computer or anothe rpower source. </li>
+									<li>The Reset button on the Arduino is used to reset the program that has been uploaded onto it.</li>
+									<li>The Arduino has 5v and 3.3v pins that can be used to power other devices.</li>
+									<li>The Arduino has 2 ground pins.</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<h3>Analog Inputs</h3>
+					<p>The Arduino uses the 6 analog pins (A0-A5) to read analog signals from electrical components such as a temperature and humidity sensor.
+					However, since they are analog, their output needs to be digitalized by the Arduino before they can be used.</p>
+					<h3>Digital I/O</h3>
+					<p>Pins 2 to 13 are digital pins that do not need to digitalize their inputs or outputs to work. They are used to recieve or transmit digital
+					signals from other components.</p>
 					<hr>
 					<h2>Basic I/O Devices</h2>
 					<p>Here are some basic I/O devices that are used in this module, their functions and what they look like.
@@ -144,6 +132,81 @@
 							</tr>
 						</table>
 				  </div>
+					<hr>
+					<h2>Arduino Programming</h2>
+					<p>Using the <a href = "https://www.arduino.cc/en/software">Arduino IDE</a> software, you can write your code, compile it, upload it to your board, and see your project come top life.
+          But first, you need to connect your Arduino Uno board to your computer via the USB cable and setup the IDE. Make sure you are using the correct board and check the port the board is connected to. </p>
+					<img src="../images/EmbedSysImg/AUS1.jpg" alt="Arduino Software 1" width="550" height="300">
+					<img src="../images/EmbedSysImg/AUS2.jpg" alt="Arduino Software 2" width="450" height="300">
+					<p>When writing your program, Arduino would prompt you to do it in the <b>setup</b> and <b>loop</b> functions. Code in the setup function is only executed <b>once</b> after each powerup
+					or reset of the Arduino Uno whilst the code in the loop function is executed <b>infinetly</b> in a loop.
+					<hr>
+					<img src="../images/EmbedSysImg/AUS3.jpg" alt="Arduino Software 3" width="550" height="300">
+					<p>Once you are done writing your code, you need to <b>compile</b> the code and <b>upload</b> it. To compile your code you can click the <b>tick</b> button and it will even notify you of any errors in the code.
+					Next, you can upload your program onto the Arduino using the <b>arrow</b> button.<p>
+					<img src="../images/EmbedSysImg/AUS3.5.jpg" alt="Arduino Software 3.5" width="550" height="400">
+					<p>Arduino has an extensive <a href = "https://www.arduino.cc/reference/en/">lanaguage reference list</a> but for now, we will just go through some basic Arduino functions to program
+					dsome I/O devices.</p>
+					<ul>
+						<li><b>digitalRead()</b>: Reads the value from a specified digital pin, either HIGH or LOW.</li>
+						<li><b>digitalWrite()</b>: Write a HIGH or a LOW value to a digital pin.</li>
+						<li><b>pinMode()</b>: Configures the specified pin to behave either as an input or an output.</li>
+						<li><b>delay()</b>: Pauses the program for the amount of time (in milliseconds) specified as parameter. (1000 ms = 1s)</li>
+					</ul>
+					<h2>Examples</h2>
+					<p>Here are some practical applications of the functions on a physical arduino board and in tinkercard,
+					a webapp that can be used to simulate circuit designs. They are the Blinking LED and Blinking LED with Switch circuit designs.</p>
+          <h3>Blinking LED</h3><br>
+					<p><b>Configuration:</b><p>
+					<img src="../images/EmbedSysImg/AUSVid1.gif" alt="Arduino Software Vid 1" style="height:350px;">
+					<video width=465px src="../images/EmbedSysImg/AUS5.mp4" controls></video>
+					<ul>
+						<li>Connect <b>Pin 13</b> to the <b>positive</b> end of the <b>LED</b>.</li>
+						<li>Connect the <b>negative</b> end of the LED to the <b>1K Ohm resistor</b>.</li>
+						<li>Connect the <b>1K Ohm resistor</b> to <b>ground</b>.</li>
+					</ul>
+					<p><b>Code:</b><p>
+					<table>
+						<tr>
+							<td><img src="../images/EmbedSysImg/AUS4.jpg" alt="Arduino Software 4" width="250" height="350"></td>
+							<td>
+								<ul>
+									<li>Set <b>pin 13</b> as <b>output</b> for LED in setup function.</li>
+									<li>Write <b>HIGH</b> to <b>pin 13</b> then <b>delay</b> for <b>1 second</b> to make the LED light up for 1 second.</li>
+									<li>Write <b>LOW</b> to <b>pin 13</b> then <b>delay</b> for <b>1 second</b> to make the LED off for 1 second.</li>
+								</ul>
+						</tr>
+					</table>
+					<hr>
+					<h3>Blinking LED With Switch</h3>
+					<p><b>Configuration:</b><p>
+					<img src="../images/EmbedSysImg/AUSVid2.gif" alt="Arduino Software Vid 2" style="height:350px;">
+					<video width=480px src="../images/EmbedSysImg/AUS7.mp4" controls></video>
+					<ul>
+						<li>Connect <b>Pin 13</b> to the <b>positive</b> end of the <b>LED</b>.</li>
+						<li>Connect the <b>negative</b> end of the LED to the <b>1K Ohm resistor</b>.</li>
+						<li>Connect the <b>1K Ohm resistor</b> to <b>ground</b>.</li>
+						<li>Connect <b>Pin 12</b> to the <b>pushbutton</b>.</li>
+						<li>Connect <b>pushbutton</b> to the <b>5V</b>.</li>
+						<li>Connect <b>pushbutton</b> to the <b>1K Ohm resistor</b>.</li>
+						<li>Connect <b>1K Ohm resistor</b> to the <b>ground</b> to ensure a well defined logic level at the pin.</li>
+					</ul>
+					<p><b>Code:</b><p>
+					<table>
+						<tr>
+							<td><img src="../images/EmbedSysImg/AUS6.jpg" alt="Arduino Software 6" width="250" height="400"></td>
+							<td>
+								<ul>
+									<li>Define a <b>boolean variable sw1</b> as <b>LOW</b> so that the intial state of the LED is LOW.</li>
+									<li>Set <b>pin 13</b> as <b>output</b> for LED in setup function.</li>
+									<li>Set <b>pin 12</b> as <b>input</b> for the pushbutton in setup function.</li>
+									<li>Set <b>sw1</b> to be whatever value the input at <b>pin 12</b> is.</li>
+									<li>Whenever the value of <b>sw1</b> <b>HIGH</b>, write <b>HIGH</b> to <b>pin 13</b> then <b>delay</b> for <b>1 second</b> to make the LED light up for 1 second.</li>
+									<li>Then write <b>LOW</b> to <b>pin 13</b> then <b>delay</b> for <b>1 second</b> to make the LED off for 1 second.</li>
+									<li>Whenever the value of <b>sw1</b> is <b>LOW</b>, write <b>LOW</b> to <b>pin 13</b> to off the LED.</li>
+								</ul>
+						</tr>
+					</table>
 				</div>
 			</div>
 			<div id = "footer">
