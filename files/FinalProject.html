@@ -39,8 +39,11 @@
 				</script>
 				<div id = "main" class = "overlap">
 					<h2>Introduction</h2>
-					<p>In this webpage I will be documenting my final project: <b>The Cardshuffler</b>. I will give a brief desciption of the project,
-					explain the design and fabrication process, what components will be used and how the project was coded. </p>
+					<p>In this webpage I will be documenting my final project: <b>The Cardshuffler</b>. I've always liked to play card games and since coming to poly, I
+					my friends and I started to play them at every opportunity. So I decided to build a card shuffler as my project and <a href = "https://www.youtube.com/watch?v=dZQxxR9AD74" >here</a>
+					is where i got my inspiration from. In this webpage, I will give a brief desciption of the project, explain the design and fabrication process,
+					what components will be used and how the project was coded. </p>
+					<img src="../images/FinalProjectImg/CardShuffler.jfif" alt="CardShuffler" width="600" height="400">
 					<hr>
 					<h2>Project Description</h2>
 					<br>
@@ -63,7 +66,7 @@
 								<th>CAD Design, Graphics</th><td><ul>
 										<li>Card Shuffler Frame</li>
 										<li>Card Tray</li>
-										<li>4cm Wheels</li>
+										<li>5cm Wheels</li>
 								</ul></td>
 							</tr>
 							<tr>
@@ -74,7 +77,7 @@
 							</tr>
 							<tr>
 								<th>3D Printing</th>
-								<td><ul><li>2x 4cm Wheels</li></ul></td>
+								<td><ul><li>2x 5cm Wheels</li></ul></td>
 							</tr>
 							<tr>
 								<th>Micro-controller</th>
@@ -82,11 +85,18 @@
 							</tr>
 							<tr>
 								<th>Input devices</th>
-								<td><ul><li>Push Button</li></ul></td>
+								<td><ul><li>Momentary Push Button</li></ul></td>
 							</tr>
 							<tr>
 								<th>Output devices</th>
 								<td><ul><li>2x FS90R Continuous Servo Motors</li></ul></td>
+							</tr>
+							<tr>
+								<th>Others</th><td><ul>
+									<li>4x Rubber Bands</li>
+									<li>Wad of Bluetack</li>
+									<li>Super Glue</li>
+								</ul></td>
 							</tr>
 						</table>
 					</div></td>
@@ -96,22 +106,32 @@
 								<tr>
 									<th>Quantity</th>
 									<th>Item Desciption</th>
+									<th>Cost</th>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>Arduino Uno</td>
+									<td>Arduino Uno<br>
+									<img src="../images/FinalProjectImg/BOM1.jpg" alt="BOM 1" width="150" height="125"></td>
+									<td>$5.00</td>
 								</tr>
 								<tr>
 									<td>2</td>
-									<td>FS90R Continuous Servo Motor</td>
+									<td>FS90R Continuous Servo Motor<br>
+									<img src="../images/FinalProjectImg/BOM2.jpg" alt="BOM 2" width="150" height="125"></td>
+									<td>$12.00</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>Momentary Push Switch 12mm</td>
+									<td>Momentary Push Switch 12mm<br>
+									<img src="../images/FinalProjectImg/BOM3.5.jpg" alt="BOM 3.5" width="150" height="125">
+								  <img src="../images/FinalProjectImg/BOM3.jpg" alt="BOM 3" width="125" height="125"></td>
+									<td>$1.50</td>
 								</tr>
 								<tr>
 									<td>1</td>
-									<td>Tiny Bread Board</td>
+									<td>Tiny Bread Board<br>
+									<img src="../images/FinalProjectImg/BOM4.jpg" alt="BOM 4" width="150" height="125"></td>
+									<td>$1.50</td>
 								</tr>
 							</table>
 							</div>
@@ -124,8 +144,12 @@
 				 <p>To be Continued...</p>
 				 <h3>Card Tray</h3>
 				 <p>To be Continued...</p>
-				 <h3>4cm Wheels</h3>
-				 <p>To be Continued...</p>
+				 <h3>5cm Wheels</h3>
+				 <p>The design for the wheel is very simple. I only needed to sketch a <b>50 mm diameter</b> circle and extrude it <b>symmetrically</b> by <b>5mm</b>.
+				 This would give the wheel a total thickness of <b>1 cm</b>.</p>
+				 <img src="../images/FinalProjectImg/CADWheel1.jpg" alt="CADWheel1" width="350" height="325">
+				 <img src="../images/FinalProjectImg/CADWheel2.jpg" alt="CADWheel2" width="500" height="325">
+				 <img src="../images/FinalProjectImg/CADWheel3.jpg" alt="CADWheel3" width="425" height="325">
 				 <hr>
 				 <h2>Laser Cutting</h2>
 				 <p>To be Continued...</p>
@@ -134,6 +158,17 @@
 				 <p>To be Continued...</p>
 				 <hr>
 				 <h2>Embedded Programming</h2>
+				 <hr>
+				 <h3>Wiring</h3>
+				 <p>To be Continued...</p>
+				 <h3>Code</h3>
+				 <p>The coding of the cardshuffler was relatively simple. The only library needed was the <b>Servo library</b> to program the continous servos. Some things
+					to take note is that <b>sv1</b> rotates in the <b>anti-clockwise</b> direction whilst <b>sv2</b> rotates in the <b>clockwise</b> direction. The <b>delay</b>
+					must also be less than <b>1000ms</b> or else too many cards on one side will not be shuffled.</p>
+				 <img src="../images/FinalProjectImg/Code1.jpg" alt="Code 1" width="625" height="400">
+				 <img src="../images/FinalProjectImg/Code2.jpg" alt="Code 2" width="625" height="400">
+				 <hr>
+				 <h2>Prototyping</h2>
 				 <p>To be Continued...</p>
 				 <hr>
 				 <h2>Final Product</h2>
