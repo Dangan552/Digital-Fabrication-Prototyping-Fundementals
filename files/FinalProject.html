@@ -159,8 +159,22 @@
 				 <hr>
 				 <h2>Embedded Programming</h2>
 				 <hr>
-				 <h3>Wiring</h3>
-				 <p>To be Continued...</p>
+				 <h3>Configuration</h3>
+				 <p>FS90R pins:</p>
+				 <img src="../images/FinalProjectImg/CSConfigPin.jpg" alt="Pins" width="450" height="125">
+				 <ul>
+					 <li>Connect the <b>ground</b> and <b>5V</b> pins from the arduino to the board.</li>
+					 <li>Connect the <b>ground</b> and <b>5V</b> pins from the <b>servos</b> to the board vertically.</li>
+					 <li>Connect <b>pin 11</b> to the <b>push button</b> on the board.</li>
+					 <li>Connect the <b>pushbutton</b> to <b>ground</b> on the board.</li>
+					 <li>Connect the <b>signal</b> pins of the <b>servos</b> to <b>pin 10 (left motor, servo2)</b> and <b>pin 9 (right motor, servo1)</b> on the arduino.</li>
+				 </ul>
+				 <img src="../images/FinalProjectImg/CSCodeSim.gif" alt="Code Sim" width="450" height="400">
+				 <p>Please note that the tinkercad simulation <b>does not have</b> continuous servos motor and thus a standard <b>180 degree servo motor</b> was used.</p>
+				 <ul>
+					 <li><b>90 degrees = stop</li>
+					 <li>180 degrees = full speed in one direction</b></li>
+				 </ul>
 				 <h3>Code</h3>
 				 <p>The coding of the cardshuffler was relatively simple. The only library needed was the <b>Servo library</b> to program the continous servos. Some things
 					to take note is that <b>sv1</b> rotates in the <b>anti-clockwise</b> direction whilst <b>sv2</b> rotates in the <b>clockwise</b> direction. The <b>delay</b>
