@@ -43,64 +43,68 @@
 					my friends and I started to play them at every opportunity. So I decided to build a card shuffler as my project and <a href = "https://www.youtube.com/watch?v=dZQxxR9AD74" >here</a>
 					is where i got my inspiration from. In this webpage, I will give a brief desciption of the project, explain the design and fabrication process,
 					what components will be used and how the project was coded. </p>
-					<img src="../images/FinalProjectImg/CardShuffler.jfif" alt="CardShuffler" width="600" height="400">
+					<img src="../images/FinalProjectImg/CardShuffler.jpeg" alt="CardShuffler" width="500" height="400">
+					<img src="../images/FinalProjectImg/CardShufflerCAD.jpg" alt="CardShuffler CAD" width="550" height="400">
 					<hr>
 					<h2>Project Description</h2>
 					<br>
 					<h3>What does it do?</h3>
-					<p>This is a machine used to shuffle cards. A deck of cards is split in half and placed onto a loading platform each.
+					<p>This is a machine used to shuffle cards. A rocker switch is used to turn on the card shuffler. A deck of cards is then split in half and each placed onto a loading platform.
 					When a pushbutton is pressed, Continuous Servo Motors under each platform spins and shuffles the half decks into the middle chamber.
-					The cards are collected in a tray at the bottom of the chamber. You can pull out the tray from the machine to extract the cards.</p>
+					The cards may then be extracted via an opening on the front wall of the card shuffler.</p>
 					<h3>What are its features?</h3>
 					<ul>
 						<li>2 Continuous Servo Motors to shuffle cards</li>
 						<li>2 Loading platforms for half a deck of cards each</li>
-						<li>Middle chamber containing a tray on a rail for cards to fall into</li>
-						<li>A Push Button to on and off the shuffler</li>
+						<li>Middle chamber for cards to fall into</li>
+						<li>A Rocker Switch to on and off the shuffler</li>
+						<li>A Psuh Button to start and stop the shuffling</li>
 					</ul>
 					<table>
-					<tr><td><h3>What will I be making?</h3>
+					<tr><td><h3>What will I be making?</h3></td></tr>
+					<tr><td>
 					<div id = "Table">
 						<table>
 							<tr>
 								<th>CAD Design, Graphics</th><td><ul>
 										<li>Card Shuffler Frame</li>
-										<li>Card Tray</li>
 										<li>5cm Wheels</li>
 								</ul></td>
 							</tr>
 							<tr>
 								<th>Laser cutting</th><td><ul>
 										<li>Card Shuffler Frame (13 Parts)</li>
-										<li>Card Tray (5 Parts)</li>
 								</ul></td>
 							</tr>
 							<tr>
 								<th>3D Printing</th>
 								<td><ul><li>2x 5cm Wheels</li></ul></td>
 							</tr>
+						</table>
+					</div></td>
+				  <td>
+					<div id = "Table">
+						<table>
 							<tr>
 								<th>Micro-controller</th>
 								<td><ul><li>Arduino Uno</li></ul></td>
 							</tr>
 							<tr>
-								<th>Input devices</th>
-								<td><ul><li>Momentary Push Button</li></ul></td>
+								<th>Input devices</th><td><ul>
+									<li>Momentary Push Button</li>
+									<li>Rocker Switch</li>
+								</ul></td>
 							</tr>
 							<tr>
 								<th>Output devices</th>
 								<td><ul><li>2x FS90R Continuous Servo Motors</li></ul></td>
 							</tr>
-							<tr>
-								<th>Others</th><td><ul>
-									<li>4x Rubber Bands</li>
-									<li>Wad of Bluetack</li>
-									<li>Super Glue</li>
-								</ul></td>
-							</tr>
 						</table>
-					</div></td>
-					<td><h3>Bill of Materials</h3>
+					</div></td></tr>
+				 </table>
+				 <table>
+					 <tr><td><h3>Bill of Materials</h3></td></tr>
+						<tr><td>
 						<div id = "Table">
 							<table>
 								<tr>
@@ -127,13 +131,35 @@
 								  <img src="../images/FinalProjectImg/BOM3.jpg" alt="BOM 3" width="125" height="125"></td>
 									<td>$1.50</td>
 								</tr>
+							</table>
+							</div></td>
+							 <td>
+								<div id = "Table">
+	 							<table>
+	 								<tr>
+	 									<th>Quantity</th>
+	 									<th>Item Desciption</th>
+	 									<th>Cost</th>
+	 								</tr>
 								<tr>
 									<td>1</td>
 									<td>Tiny Bread Board<br>
 									<img src="../images/FinalProjectImg/BOM4.jpg" alt="BOM 4" width="150" height="125"></td>
 									<td>$1.50</td>
 								</tr>
-							</table>
+								<tr>
+									<td>1</td>
+									<td>Rocker Switch<br>
+									<img src="../images/FinalProjectImg/BOM5.jpg" alt="BOM 5" width="125" height="125"></td>
+									<td>$1.50</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>4x AA Battery Holder<br>
+									<img src="../images/FinalProjectImg/BOM6.jpg" alt="BOM 6" width="150" height="125"></td>
+									<td>$1.50</td>
+								</tr>
+							</table></tr>
 							</div>
 					</td></tr>
 			   </table>
@@ -141,9 +167,77 @@
 				 <h2>CAD Design</h2>
 				 <hr>
 				 <h3>Card Shuffler Frame</h3>
-				 <p>To be Continued...</p>
-				 <h3>Card Tray</h3>
-				 <p>To be Continued...</p>
+				 <p>Here are the parameters used for the Card Shuffler Frame using the <b>parameters</b> function:</p>
+				 <img src="../images/FinalProjectImg/CFD1.jpg" alt="Card Shuffler Frame Design 1" width="900" height="300">
+				 <p>Next are the sketches for the base and front sides of the box. The teeth can be sketched using the <b>rectangle</b> command and dimensioned using <b>Blen/ NSeg</b>.
+				 The <b>rectangular pattern</b> is used as a shortcut to get the correct amount of teeth. Set the settings as <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: BLen</b>.
+				 The teeth can be then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
+				 <img src="../images/FinalProjectImg/CFD2.jpg" alt="Card Shuffler Frame Design 2" width="650" height="350">
+				 <img src="../images/FinalProjectImg/CFD3.jpg" alt="Card Shuffler Frame Design 3" width="650" height="350">
+				 <p>Extrude both the base and front by <b>thk</b> before using the <b>combine</b> function to make sure that your teeth dosent join together.</p>
+				 <img src="../images/FinalProjectImg/CFD4.jpg" alt="Card Shuffler Frame Design 4" width="600" height="400">
+				 <img src="../images/FinalProjectImg/CFD5.jpg" alt="Card Shuffler Frame Design 5" width="600" height="400">
+				 <p>Sketch the side wall like this. Use the <b>line</b> function to draw a middle line and change it to <b>construction line</b>. Next, use the <b>rectangle</b> and <b>rectangular pattern</b>
+				 functions to draw the teeth. Set the settings for the horizontal teeth as <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: BWid</b>. For the vertical teeth, you need
+				 to use the <b>2nd Quantity: NSeg</b> and input <b>Distance: -BHeight</b>. The teeth can be then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
+				 <img src="../images/FinalProjectImg/CFD6.jpg" alt="Card Shuffler Frame Design 6" width="600" height="350">
+				 <img src="../images/FinalProjectImg/CFD7.jpg" alt="Card Shuffler Frame Design 7" width="600" height="350">
+				 <p>Afterwards, use the <b>mirror</b> function to mirror the teeth over to the other side of the wall. Select the line that you want to mirror, then the mirror line. Once, done with <thead>
+				 sketch, extrude it by <b>-thk</b> using <b>new body</b>.</p>
+				 <img src="../images/FinalProjectImg/CFD8.jpg" alt="Card Shuffler Frame Design 8" width="600" height="350">
+				 <img src="../images/FinalProjectImg/CFD9.jpg" alt="Card Shuffler Frame Design 9" width="600" height="350">
+				 <p>Use the <b>move/ copy</b> function, select <b>translate</b>, input <b>X Distance: -Cwid</b> and <b>Create Copy</b> to make your chamber walls. Use <b>Construct: Offset Plane</b>,
+				 select <b>XY Plane</b> and input <b>Distance: CHeight</b> to make the loading platforms.</p>
+				 <img src="../images/FinalProjectImg/CFD10.jpg" alt="Card Shuffler Frame Design 10" width="600" height="400">
+				 <img src="../images/FinalProjectImg/CFD11.jpg" alt="Card Shuffler Frame Design 11" width="600" height="400">
+				 <p>Sketch the loading platform like this. Use the <b>line</b> function to draw a middle line and change it to <b>construction line</b>. Next, use the <b>rectangle</b> and <b>rectangular pattern</b>
+				 functions to draw the teeth. Set the settings for the horizontal teeth as <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: CWid</b>. For the horizontal teeth, you need
+				 to use the <b>2nd Quantity: NSeg</b> and input <b>Distance: -BWid</b>. The teeth can be then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
+				 <img src="../images/FinalProjectImg/CFD12.jpg" alt="Card Shuffler Frame Design 12" width="600" height="400">
+				 <img src="../images/FinalProjectImg/CFD13.jpg" alt="Card Shuffler Frame Design 13" width="600" height="400">
+				 <p>Afterwards, use the <b>mirror</b> function to mirror the teeth over to the other side of the wall. Select the line that you want to mirror, then the mirror line. Next, use the <b>rectangle</b> function
+				 to draw the rectangle and dimension it using <b>MLen</b> and <b>MWid</b>. Then extrude by <b>-thk</b>.</p>
+				 <img src="../images/FinalProjectImg/CFD14.jpg" alt="Card Shuffler Frame Design 14" width="600" height="400">
+				 <img src="../images/FinalProjectImg/CFD15.jpg" alt="Card Shuffler Frame Design 15" width="600" height="400">
+				 <p>Use the <b>mirror</b> function to mirror the side wall, chamber wall, and loading platform using the <b>YZ Plane</b>. Then use the <b>move/ copy</b>, select <b>Create Copy</b>, and <b>point to point</b>.
+				 The points selected should be the <b>inner corner of the front wall</b> and the <b>outer corner of the base</b>.</p>
+				 <img src="../images/FinalProjectImg/CFD16.jpg" alt="Card Shuffler Frame Design 16" width="600" height="400">
+				 <img src="../images/FinalProjectImg/CFD17.jpg" alt="Card Shuffler Frame Design 17" width="600" height="400">
+				 <p>Next, use the <b>combine</b> function to make sure that your all of the teeth on the different pieces dosent join together. (The images below only show 2 examples of the combination)</p>
+				 <img src="../images/FinalProjectImg/CFD18.jpg" alt="Card Shuffler Frame Design 18" width="600" height="400">
+				 <img src="../images/FinalProjectImg/CFD19.jpg" alt="Card Shuffler Frame Design 19" width="600" height="400">
+				 <p>Lets move on to making the seperators (keeps all the cards from spilling out) and the motor holes. Start a sketch on the <b>right chamber wall</b> and then turn off the bodies for the <b>right wall</b> and
+				 <b>loading platform</b>. Use the <b>line</b> function to draw a middle line and change it to <b>construction line</b>. Next, draw a rectangle and dimension it as <b>2.5mm in width</b> before constraining it
+				 using the <b>coincident</b> function to the bottom of the third teeth. Draw another rectangle and <b>collinear</b> it to the bottom of the first rectangle. Dimension it using <b>MLen</b> and <b>MWid</b> before
+				 using the <b>symmetry</b> function to align it to the centre of the construction line. Once you are done with the sketch, use extrude to cut a hole of <b>distance -90mm</b> so that it reaches the <b>left chamber wall</b>.</p>
+				 <img src="../images/FinalProjectImg/CFD20.jpg" alt="Card Shuffler Frame Design 20" width="650" height="400">
+				 <img src="../images/FinalProjectImg/CFD21.jpg" alt="Card Shuffler Frame Design 21" width="600" height="400">
+				 <p>Now we make the motor holders. Start a sketch on the <b>motor hole of the loading platform</b> and then turn off the <b>front wall</b> body. Draw a rectangle of <b>width: MHeight</b> and <b>length: MLen</b> before
+				 drawing construction lines <b>25mm from the top</b> and <b>30mm from the right edge</b>. Draw a <b>centre rectangle</b> from the intersection of the construction lines and dimensions it <b>length: 24mm</b> and <b>width: 12.6mm</b>.
+				 Sketch 2 circles of <b>diameter 2mm</b> on the horizontal construction line and dimension the distance between them to be <b>27mm</b>. Use the <b>symmetry</b> function again to align it to the centre of the vertical construction line.
+				 Once finished, extrude the sketch by <b>-thk</b>.</p>
+				 <img src="../images/FinalProjectImg/CFD22.jpg" alt="Card Shuffler Frame Design 22" width="600" height="450">
+				 <img src="../images/FinalProjectImg/CFD23.jpg" alt="Card Shuffler Frame Design 23" width="600" height="450">
+				 <p>Next, move the motor holder using the <b>move/ copy</b> function by <b>Y Distance: 10mm</b> and mirror the body around the <b>YZ</b> plane.</p>
+				 <img src="../images/FinalProjectImg/CFD24.jpg" alt="Card Shuffler Frame Design 24" width="600" height="450">
+				 <img src="../images/FinalProjectImg/CFD25.jpg" alt="Card Shuffler Frame Design 25" width="600" height="450">
+				 <p>Use the <b>combine</b> function to make sure that your all of the teeth on the different pieces dosent join together. (The images below only show 2 examples of the combination)</p>
+				 <img src="../images/FinalProjectImg/CFD26.jpg" alt="Card Shuffler Frame Design 26" width="600" height="450">
+ 				 <img src="../images/FinalProjectImg/CFD27.jpg" alt="Card Shuffler Frame Design 27" width="600" height="450">
+				 <p>Start a sketch on the <b>front wall</b>, draw a middle line and change it to <b>construction line</b>. Next, sketch a rectangle and dimension it <b>78 by 30 mm</b>, <b>6mm</b> from the bottom edge and align it to the middle line.
+				 Extrude the rectangle by <b>-thk</b> to make the exit hole for the shuffled cards. Start another sketch on the <b>right wall</b> drawing a circle of <b>diameter: 15.2mm</b> and dimension it <b>27.5 and 45 mm</b> away from the left and
+				 bottom edge respectively. Extrude the circle by <b>-thk</b> to make the hole for the momentary push button.</p>
+				 <img src="../images/FinalProjectImg/CFD28.jpg" alt="Card Shuffler Frame Design 28" width="600" height="450">
+ 				 <img src="../images/FinalProjectImg/CFD29.jpg" alt="Card Shuffler Frame Design 29" width="600" height="450">
+				 <p>Create a sketch on the <b>left wall</b>. This sketch will be the same as the one drawn on the right wall with the only difference being the size of the circle at <b>diameter 20.2mm</b>. Extrude the circle by <b>-thk</b> to make the hole for the toggle switch.
+				 Last but not least, start a sketch on the <b>back wall</b>. Draw a <b>15 by 13 mm rectangle</b> and dimension it <b> 15 and 6 mm</b> away from the left and bottom edge respectively. Next, draw a <b>diameter 11mm</b> circle and dimension it <b>25 and 13 mm</b>
+			   away from the right edge of the previously drawn rectangle and the bottom edge respectively. Lastly, draw a <b> 5 by 8 mm rectangle</b> and dimension it <b>36 and 8 mm</b> away from the bottom edge and left edge of the chamber wall teeth.
+			   Extrude the shapes by <b>-thk</b> to make the holes for the wires.</p>
+				 <img src="../images/FinalProjectImg/CFD30.jpg" alt="Card Shuffler Frame Design 30" width="600" height="450">
+	 			 <img src="../images/FinalProjectImg/CFD31.jpg" alt="Card Shuffler Frame Design 31" width="650" height="450">
+				 <p>And there you have it! the CAD design for the card shuffler frame!</p>
+				 <img src="../images/FinalProjectImg/CFD32.jpg" alt="Card Shuffler Frame Design 32" width="600" height="450">
+				 <hr>
 				 <h3>5cm Wheels</h3>
 				 <p>The design for the wheel is very simple. I only needed to sketch a <b>50 mm diameter</b> circle and extrude it <b>symmetrically</b> by <b>5mm</b>.
 				 This would give the wheel a total thickness of <b>1 cm</b>.</p>
@@ -152,7 +246,24 @@
 				 <img src="../images/FinalProjectImg/CADWheel3.jpg" alt="CADWheel3" width="425" height="325">
 				 <hr>
 				 <h2>Laser Cutting</h2>
-				 <p>To be Continued...</p>
+				 <p>Export all the sketches of the Cardshuffler frame as <b>DXF</b> and paste them onto <b>CorelDraw</b>.</p>
+				 <img src="../images/FinalProjectImg/LaserCut0.jpg" alt="Laser Cut 0" width="650" height="450">
+         <img src="../images/FinalProjectImg/LaserCut1.png" alt="Laser Cut 1" width="650" height="450">
+				 <p>Make sure to change all the lines of the parts to <b>RGB 255,0,0 (Red)</b> for cutting and <b>hairline</b> thickness. Once done, click on <b>Ctrl+P</b>
+				 to and click on <b>print</b> to send your drawings to the lasercutting software.</p>
+				 <img src="../images/FinalProjectImg/LaserCut2.png" alt="Laser Cut 2" width="650" height="450">
+				 <img src="../images/FinalProjectImg/LaserCut3.png" alt="Laser Cut 3" width="650" height="450">
+				 <p>In the laser cutting software, place your piece according to the dimensions of the size of the material you are cutting from.
+				 In this case, im using a <b>80 x 36 x 3 cm</b> board thus I am just going to place my pieces at the top left hand corner of the machine. Next, click
+			   on <b>Settings</b> and then <b>Load</b>.</p>
+				 <img src="../images/FinalProjectImg/LaserCut4.png" alt="Laser Cut 4" width="650" height="400">
+				 <img src="../images/FinalProjectImg/LaserCut5.png" alt="Laser Cut 5" width="600" height="400">
+				 <p>Select the <b>3mm plywood, red cut, green engrave.las</b> file and open it. This will automatically configure the laser cutter settings to the type of material
+				 you are using. Once done, click on <b>Apply</b> and <b>Ok</b> in settings. Lastly, you click on the big green play button to start the laser cutting process.</p>
+				 <img src="../images/FinalProjectImg/LaserCut6.png" alt="Laser Cut 6" width="650" height="400">
+				 <img src="../images/FinalProjectImg/LaserCut7.png" alt="Laser Cut 7" width="600" height="400">
+				 <p>Once you are done laser cutting, wait a while to let the fumes be sucked away before extracting your pieces.</p>
+				 <video width=600px src="../images/FinalProjectImg/LaserCutVid.mp4" controls></video>
 				 <hr>
 				 <h2>3D Printing</h2>
 				 <p>Export the file as <b>STL</b> and import it into <a href = "https://ultimaker.com/software/ultimaker-cura" >Ultimaker Cura</a>. Click on <b>Rotate</b>
@@ -209,7 +320,19 @@
 				 <img src="../images/FinalProjectImg/Code1.jpg" alt="Code 1" width="625" height="400">
 				 <img src="../images/FinalProjectImg/Code2.jpg" alt="Code 2" width="625" height="400">
 				 <hr>
-				 <h2>Assembly</h2>
+				 <h2>Power Supply</h2>
+				 <p>A good project should be portable and possess an internal power supply as it is very cumbersome for it to be powered by the computer.
+				 I decided to use a power supply of 6V via 4 AA batteries in a 4x AA battery holder. A rocker switch is also used to on and off the arduino in the shuffler.
+			   The power supply is then connected to the arduino's external power supply port via a barrel jack.</p>
+				 <img src="../images/FinalProjectImg/PS1.jpg" alt="Power Source 1" width="625" height="400">
+				 <img src="../images/FinalProjectImg/PS2.jpg" alt="Power Source 2" width="625" height="400">
+				 <ul>
+					 <li><b>6V</b> of battery holder connected to <b>rocker switch</b>.</li>
+					 <li><b>Rocker Switch</b> connected to <b>positive end of barrel jack</b>.</li>
+					 <li><b>GND</b> of battery holder connected to <b>negative end of barrel jack</b>.</li>
+				 </ul>
+				 <hr>
+				 <h2>Assembly & Troubleshooting</h2>
 				 <img src="../images/FinalProjectImg/Parts.jpeg" alt="Parts" width="450" height="400">
 				 <video width=710px src="../images/FinalProjectImg/Assembly.mp4" controls></video>
 				 <p>To be Continued...</p>
