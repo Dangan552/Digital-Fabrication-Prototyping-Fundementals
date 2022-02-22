@@ -169,71 +169,71 @@
 				 <hr>
 				 <h3>Card Shuffler Frame</h3>
 				 <p>Here are the parameters used for the Card Shuffler Frame using the <b>parameters</b> function:</p>
-				 <img src="../images/FinalProjectImg/CFD1.jpg" alt="Card Shuffler Frame Design 1" width="900" height="300">
-				 <p>Next are the sketches for the base and front sides of the box. The teeth can be sketched using the <b>rectangle</b> command and dimensioned using <b>Blen/ NSeg</b>.
-				 The <b>rectangular pattern</b> is used as a shortcut to get the correct amount of teeth. Set the settings as <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: BLen</b>.
-				 The teeth can be then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
+				 <img src="../images/FinalProjectImg/CFD1.jpg" alt="Card Shuffler Frame Design 1" width="900" height="280">
+				 <p>Next are the sketches for the base and front sides of the box. The teeth are sketched using the <b>rectangle</b> command and dimensioned using <b>Blen/ NSeg</b>.
+				 The <b>rectangular pattern</b> is used as a shortcut to get the correct amount of teeth. The settings are set as <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: BLen</b>.
+				 The teeth are then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
 				 <img src="../images/FinalProjectImg/CFD2.jpg" alt="Card Shuffler Frame Design 2" width="650" height="350">
 				 <img src="../images/FinalProjectImg/CFD3.jpg" alt="Card Shuffler Frame Design 3" width="650" height="350">
-				 <p>Extrude both the base and front by <b>thk</b> before using the <b>combine</b> function to make sure that your teeth dosent join together.</p>
+				 <p>The base and front are both extruded by <b>thk</b> before using the <b>combine</b> function to make sure that the teeth dosent join together.</p>
 				 <img src="../images/FinalProjectImg/CFD4.jpg" alt="Card Shuffler Frame Design 4" width="600" height="400">
 				 <img src="../images/FinalProjectImg/CFD5.jpg" alt="Card Shuffler Frame Design 5" width="600" height="400">
-				 <p>Sketch the side wall like this. Use the <b>line</b> function to draw a middle line and change it to <b>construction line</b>. Next, use the <b>rectangle</b> and <b>rectangular pattern</b>
-				 functions to draw the teeth. Set the settings for the horizontal teeth as <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: BWid</b>. For the vertical teeth, you need
-				 to use the <b>2nd Quantity: NSeg</b> and input <b>Distance: -BHeight</b>. The teeth can be then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
+				 <p>The side wall is sketched like this. The <b>line</b> function is used to draw a middle line and then changed to <b>construction line</b>. Next, the <b>rectangle</b> and <b>rectangular pattern</b>
+				 functions are used to draw the teeth. These are the settings for the horizontal teeth, <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: BWid</b>. For the vertical teeth, the settings
+				 are, <b>2nd Quantity: NSeg</b> and <b>Distance: -BHeight</b>. The teeth are then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
 				 <img src="../images/FinalProjectImg/CFD6.jpg" alt="Card Shuffler Frame Design 6" width="600" height="350">
 				 <img src="../images/FinalProjectImg/CFD7.jpg" alt="Card Shuffler Frame Design 7" width="600" height="350">
-				 <p>Afterwards, use the <b>mirror</b> function to mirror the teeth over to the other side of the wall. Select the line that you want to mirror, then the mirror line. Once, done with <thead>
-				 sketch, extrude it by <b>-thk</b> using <b>new body</b>.</p>
+				 <p>Afterwards, the <b>mirror</b> function is used to mirror the teeth over to the other side of the wall. The shapes to be mirrored and the mirror line are selected before they are mirrored. Once, the
+				 sketch is done, it is extruded by <b>-thk</b> using <b>new body</b>.</p>
 				 <img src="../images/FinalProjectImg/CFD8.jpg" alt="Card Shuffler Frame Design 8" width="600" height="350">
 				 <img src="../images/FinalProjectImg/CFD9.jpg" alt="Card Shuffler Frame Design 9" width="600" height="350">
-				 <p>Use the <b>move/ copy</b> function, select <b>translate</b>, input <b>X Distance: -Cwid</b> and <b>Create Copy</b> to make your chamber walls. Use <b>Construct: Offset Plane</b>,
-				 select <b>XY Plane</b> and input <b>Distance: CHeight</b> to make the loading platforms.</p>
+				 <p>The <b>move/ copy</b> function is used by selecting <b>translate</b> and inputing <b>X Distance: -Cwid</b> and <b>Create Copy</b> to make the chamber walls. <b>Construct: Offset Plane</b>
+				 is used by selecting <b>XY Plane</b> and inputing <b>Distance: CHeight</b> to make the loading platforms.</p>
 				 <img src="../images/FinalProjectImg/CFD10.jpg" alt="Card Shuffler Frame Design 10" width="600" height="400">
 				 <img src="../images/FinalProjectImg/CFD11.jpg" alt="Card Shuffler Frame Design 11" width="600" height="400">
-				 <p>Sketch the loading platform like this. Use the <b>line</b> function to draw a middle line and change it to <b>construction line</b>. Next, use the <b>rectangle</b> and <b>rectangular pattern</b>
-				 functions to draw the teeth. Set the settings for the horizontal teeth as <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: CWid</b>. For the horizontal teeth, you need
-				 to use the <b>2nd Quantity: NSeg</b> and input <b>Distance: -BWid</b>. The teeth can be then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
+				 <p>The loading platform is sketched like this. <b>Line</b> function is used again to draw a middle line which is changed to <b>construction line</b>. Next, the <b>rectangle</b> and <b>rectangular pattern</b>
+				 functions are used to draw the teeth. These are the settings for the horizontal teeth, <b>Distance Type: Spacing</b>, <b>1st Quantity: NSeg</b> and <b>Distance: CWid</b>. For the vertical teeth, the settings
+				 are, <b>2nd Quantity: NSeg</b> and <b>Distance: -BWid</b>. The teeth are then constrained using a series of <b>coincident</b> and <b>collinear</b> constraints.</p>
 				 <img src="../images/FinalProjectImg/CFD12.jpg" alt="Card Shuffler Frame Design 12" width="600" height="400">
 				 <img src="../images/FinalProjectImg/CFD13.jpg" alt="Card Shuffler Frame Design 13" width="600" height="400">
-				 <p>Afterwards, use the <b>mirror</b> function to mirror the teeth over to the other side of the wall. Select the line that you want to mirror, then the mirror line. Next, use the <b>rectangle</b> function
-				 to draw the rectangle and dimension it using <b>MLen</b> and <b>MWid</b>. Then extrude by <b>-thk</b>.</p>
+				 <p>Afterwards, the <b>mirror</b> function is used to mirror the teeth over to the other side of the wall. The shapes to be mirrored and the mirror line are selected before they are mirrored. Next, the <b>rectangle</b> function
+				 is used to draw the rectangle and is dimensioned using <b>MLen</b> and <b>MWid</b>. Then extruded by <b>-thk</b>.</p>
 				 <img src="../images/FinalProjectImg/CFD14.jpg" alt="Card Shuffler Frame Design 14" width="600" height="400">
 				 <img src="../images/FinalProjectImg/CFD15.jpg" alt="Card Shuffler Frame Design 15" width="600" height="400">
-				 <p>Use the <b>mirror</b> function to mirror the side wall, chamber wall, and loading platform using the <b>YZ Plane</b>. Then use the <b>move/ copy</b>, select <b>Create Copy</b>, and <b>point to point</b>.
+				 <p>The <b>mirror</b> function is used to mirror the side wall, chamber wall, and loading platform using the <b>YZ Plane</b>. <b>move/ copy</b> is then used by selecting <b>Create Copy</b>, and <b>point to point</b>.
 				 The points selected should be the <b>inner corner of the front wall</b> and the <b>outer corner of the base</b>.</p>
 				 <img src="../images/FinalProjectImg/CFD16.jpg" alt="Card Shuffler Frame Design 16" width="600" height="400">
 				 <img src="../images/FinalProjectImg/CFD17.jpg" alt="Card Shuffler Frame Design 17" width="600" height="400">
-				 <p>Next, use the <b>combine</b> function to make sure that your all of the teeth on the different pieces dosent join together. (The images below only show 2 examples of the combination)</p>
+				 <p>Next, the <b>combine</b> function is used to make sure that the all of the teeth on the different pieces dosent join together. (The images below only show 2 examples of the combination)</p>
 				 <img src="../images/FinalProjectImg/CFD18.jpg" alt="Card Shuffler Frame Design 18" width="600" height="400">
 				 <img src="../images/FinalProjectImg/CFD19.jpg" alt="Card Shuffler Frame Design 19" width="600" height="400">
-				 <p>Lets move on to making the seperators (keeps all the cards from spilling out) and the motor holes. Start a sketch on the <b>right chamber wall</b> and then turn off the bodies for the <b>right wall</b> and
-				 <b>loading platform</b>. Use the <b>line</b> function to draw a middle line and change it to <b>construction line</b>. Next, draw a rectangle and dimension it as <b>2.5mm in width</b> before constraining it
+				 <p>Lets move on to the seperators (keeps all the cards from spilling out) and the motor holes. A sketch is started on the <b>right chamber wall</b> and then the bodies <b>right wall</b> and
+				 <b>loading platform</b>are turned off. <b>Line</b> function is used to draw a middle line and is changeed to <b>construction line</b>. Next, a rectangle is drawn and dimensioned as <b>2.5mm in width</b> before being constrained
 				 using the <b>coincident</b> function to the bottom of the third teeth. Draw another rectangle and <b>collinear</b> it to the bottom of the first rectangle. Dimension it using <b>MLen</b> and <b>MWid</b> before
-				 using the <b>symmetry</b> function to align it to the centre of the construction line. Once you are done with the sketch, use extrude to cut a hole of <b>distance -90mm</b> so that it reaches the <b>left chamber wall</b>.</p>
+				 using the <b>symmetry</b> function to align it to the centre of the construction line. Once done with the sketch, it is extruded to cut a hole of <b>distance -90mm</b> so that it reaches the <b>left chamber wall</b>.</p>
 				 <img src="../images/FinalProjectImg/CFD20.jpg" alt="Card Shuffler Frame Design 20" width="650" height="400">
 				 <img src="../images/FinalProjectImg/CFD21.jpg" alt="Card Shuffler Frame Design 21" width="600" height="400">
-				 <p>Now we make the motor holders. Start a sketch on the <b>motor hole of the loading platform</b> and then turn off the <b>front wall</b> body. Draw a rectangle of <b>width: MHeight</b> and <b>length: MLen</b> before
-				 drawing construction lines <b>25mm from the top</b> and <b>30mm from the right edge</b>. Draw a <b>centre rectangle</b> from the intersection of the construction lines and dimensions it <b>length: 24mm</b> and <b>width: 12.6mm</b>.
-				 Sketch 2 circles of <b>diameter 2mm</b> on the horizontal construction line and dimension the distance between them to be <b>27mm</b>. Use the <b>symmetry</b> function again to align it to the centre of the vertical construction line.
-				 Once finished, extrude the sketch by <b>-thk</b>.</p>
+				 <p>Now for the motor holders. A sketch is started on the <b>motor hole of the loading platform</b> and then the <b>front wall</b> body is turned off. A rectangle of <b>width: MHeight</b> and <b>length: MLen</b> and
+				 construction lines <b>25mm from the top</b> and <b>30mm from the right edge</b> are drawn. A <b>centre rectangle</b> is created at the intersection of the construction lines and dimensioned as <b>length: 24mm</b> and <b>width: 12.6mm</b>.
+				 2 circles of <b>diameter 2mm</b> are sketched on the horizontal construction line and the distance between them is dimensioned to be <b>27mm</b>. The <b>symmetry</b> function is used again to align it to the centre of the vertical construction line.
+				 Once finished, the sketch is extruded <b>-thk</b>.</p>
 				 <img src="../images/FinalProjectImg/CFD22.jpg" alt="Card Shuffler Frame Design 22" width="600" height="450">
 				 <img src="../images/FinalProjectImg/CFD23.jpg" alt="Card Shuffler Frame Design 23" width="600" height="450">
-				 <p>Next, move the motor holder using the <b>move/ copy</b> function by <b>Y Distance: 10mm</b> and mirror the body around the <b>YZ</b> plane.</p>
+				 <p>Next, the motor holder is moved using the <b>move/ copy</b> function by <b>Y Distance: 10mm</b> and the body is mirrored around the <b>YZ</b> plane.</p>
 				 <img src="../images/FinalProjectImg/CFD24.jpg" alt="Card Shuffler Frame Design 24" width="600" height="450">
 				 <img src="../images/FinalProjectImg/CFD25.jpg" alt="Card Shuffler Frame Design 25" width="600" height="450">
-				 <p>Use the <b>combine</b> function to make sure that your all of the teeth on the different pieces dosent join together. (The images below only show 2 examples of the combination)</p>
+				 <p><b>Combine</b> is used to make sure that the all of the teeth on the different pieces dosent join together. (The images below only show 2 examples of the combination)</p>
 				 <img src="../images/FinalProjectImg/CFD26.jpg" alt="Card Shuffler Frame Design 26" width="600" height="450">
  				 <img src="../images/FinalProjectImg/CFD27.jpg" alt="Card Shuffler Frame Design 27" width="600" height="450">
-				 <p>Start a sketch on the <b>front wall</b>, draw a middle line and change it to <b>construction line</b>. Next, sketch a rectangle and dimension it <b>78 by 30 mm</b>, <b>6mm</b> from the bottom edge and align it to the middle line.
-				 Extrude the rectangle by <b>-thk</b> to make the exit hole for the shuffled cards. Start another sketch on the <b>right wall</b> drawing a circle of <b>diameter: 15.2mm</b> and dimension it <b>27.5 and 45 mm</b> away from the left and
-				 bottom edge respectively. Extrude the circle by <b>-thk</b> to make the hole for the momentary push button.</p>
+				 <p>A sketch is drawn on the <b>front wall</b>, with a middle <b>construction line</b>. Next, a rectangle is sketched and dimensioned <b>78 by 30 mm</b>, <b>6mm</b> from the bottom edge and aligned it to the middle line.
+				 The rectangle is extruded by <b>-thk</b> to make the exit hole for the shuffled cards. Another sketch is started on the <b>right wall</b> and a circle of <b>diameter: 15.2mm</b> is drawn and dimensioned by <b>27.5 and 45 mm</b> away from the left and
+				 bottom edge respectively. The circle is extruded by <b>-thk</b> to make the hole for the momentary push button.</p>
 				 <img src="../images/FinalProjectImg/CFD28.jpg" alt="Card Shuffler Frame Design 28" width="600" height="450">
  				 <img src="../images/FinalProjectImg/CFD29.jpg" alt="Card Shuffler Frame Design 29" width="600" height="450">
-				 <p>Create a sketch on the <b>left wall</b>. This sketch will be the same as the one drawn on the right wall with the only difference being the size of the circle at <b>diameter 20.2mm</b>. Extrude the circle by <b>-thk</b> to make the hole for the toggle switch.
-				 Last but not least, start a sketch on the <b>back wall</b>. Draw a <b>15 by 13 mm rectangle</b> and dimension it <b> 15 and 6 mm</b> away from the left and bottom edge respectively. Next, draw a <b>diameter 11mm</b> circle and dimension it <b>25 and 13 mm</b>
-			   away from the right edge of the previously drawn rectangle and the bottom edge respectively. Lastly, draw a <b> 5 by 8 mm rectangle</b> and dimension it <b>36 and 8 mm</b> away from the bottom edge and left edge of the chamber wall teeth.
-			   Extrude the shapes by <b>-thk</b> to make the holes for the wires.</p>
+				 <p>A sketch is created on the <b>left wall</b> and will be the same as the one drawn on the right wall with the only difference being the size of the circle at <b>diameter 20.2mm</b>. The circle  is extruded by <b>-thk</b> to make the hole for the toggle switch.
+				 Last but not least, another sketch is created on the <b>back wall</b> a <b>15 by 13 mm rectangle</b> is drawn and dimensioned by <b> 15 and 6 mm</b> away from the left and bottom edge respectively. A <b>diameter 11mm</b> circle is alsor drawn and dimensioned by <b>25 and 13 mm</b>
+			   away from the right edge of the previously drawn rectangle and the bottom edge respectively. Lastly, a <b> 5 by 8 mm rectangle</b> is drawn and dimensioned by <b>36 and 8 mm</b> away from the bottom edge and left edge of the chamber wall teeth.
+			   The shapes are then extruded by <b>-thk</b> to make the holes for the wires.</p>
 				 <img src="../images/FinalProjectImg/CFD30.jpg" alt="Card Shuffler Frame Design 30" width="600" height="450">
 	 			 <img src="../images/FinalProjectImg/CFD31.jpg" alt="Card Shuffler Frame Design 31" width="650" height="450">
 				 <p>And there you have it! the CAD design for the card shuffler frame!</p>
@@ -247,54 +247,52 @@
 				 <img src="../images/FinalProjectImg/CADWheel3.jpg" alt="CADWheel3" width="425" height="325">
 				 <hr>
 				 <h2>Laser Cutting</h2>
-				 <p>Export all the sketches of the Cardshuffler frame as <b>DXF</b> and paste them onto <b>CorelDraw</b>.</p>
+				 <p>The sketches of the Cardshuffler frame are all exported as <b>DXF</b> and pasted onto <b>CorelDraw</b>.</p>
 				 <img src="../images/FinalProjectImg/LaserCut0.jpg" alt="Laser Cut 0" width="650" height="450">
          <img src="../images/FinalProjectImg/LaserCut1.png" alt="Laser Cut 1" width="650" height="450">
-				 <p>Make sure to change all the lines of the parts to <b>RGB 255,0,0 (Red)</b> for cutting and <b>hairline</b> thickness. Once done, click on <b>Ctrl+P</b>
-				 to and click on <b>print</b> to send your drawings to the lasercutting software.</p>
+				 <p>All the lines of the parts are changed to <b>RGB 255,0,0 (Red)</b> for cutting and <b>hairline</b> thickness. Once done, <b>Ctrl+P</b> is used to bring up the printer settings
+				 and <b>print</b> is selected to send the drawings to the lasercutting software.</p>
 				 <img src="../images/FinalProjectImg/LaserCut2.png" alt="Laser Cut 2" width="650" height="450">
 				 <img src="../images/FinalProjectImg/LaserCut3.png" alt="Laser Cut 3" width="650" height="450">
-				 <p>In the laser cutting software, place your piece according to the dimensions of the size of the material you are cutting from.
-				 In this case, im using a <b>80 x 36 x 3 cm</b> board thus I am just going to place my pieces at the top left hand corner of the machine. Next, click
+				 <p>In the laser cutting software, the pieces are placed according to the dimensions of the size of the material that I am cutting from.
+				 In this case, im using a <b>80 x 36 x 3 cm</b> board. Thus I placed my pieces at the top left hand corner of the machine. Next, I clicked
 			   on <b>Settings</b> and then <b>Load</b>.</p>
 				 <img src="../images/FinalProjectImg/LaserCut4.png" alt="Laser Cut 4" width="650" height="400">
 				 <img src="../images/FinalProjectImg/LaserCut5.png" alt="Laser Cut 5" width="600" height="400">
-				 <p>Select the <b>3mm plywood, red cut, green engrave.las</b> file and open it. This will automatically configure the laser cutter settings to the type of material
-				 you are using. Once done, click on <b>Apply</b> and <b>Ok</b> in settings. Lastly, you click on the big green play button to start the laser cutting process.</p>
+				 <p>The <b>3mm plywood, red cut, green engrave.las</b> file is selected and openned. This will automatically configure the laser cutter settings to the type of material
+				 being used. Once done, <b>Apply</b> and <b>Ok</b> are pressed in settings. Lastly, the big green play button is pressed to start the laser cutting process.</p>
 				 <img src="../images/FinalProjectImg/LaserCut6.png" alt="Laser Cut 6" width="650" height="400">
 				 <img src="../images/FinalProjectImg/LaserCut7.png" alt="Laser Cut 7" width="600" height="400">
-				 <p>Once you are done laser cutting, wait a while to let the fumes be sucked away before extracting your pieces.</p>
+				 <p>Once done laser cutting, wait a while to let the fumes be sucked away before extracting the pieces.</p>
 				 <video width=700px src="../images/FinalProjectImg/LaserCutVid.mp4" controls></video>
 				 <img src="../images/FinalProjectImg/LaserCut8.jpeg" alt="Laser Cut 7" width="600" height="397">
 				 <hr>
 				 <h2>3D Printing</h2>
-				 <p>Export the file as <b>STL</b> and import it into <a href = "https://ultimaker.com/software/ultimaker-cura" >Ultimaker Cura</a>. Click on <b>Rotate</b>
-				 and then <b>lay flat</b> so that the wheel is flat on the board.</p>
+				 <p>The file is exported as <b>STL</b> and imported into <a href = "https://ultimaker.com/software/ultimaker-cura" >Ultimaker Cura</a>. Use <b>Rotate</b>
+				 and then <b>lay flat</b> to position the wheel flat on the board.</p>
 				 <img src="../images/FinalProjectImg/3DWheel1.jpg" alt="3D Printing 1" width="600" height="400">
 				 <img src="../images/FinalProjectImg/3DWheel2.jpg" alt="3D Printing 2" width="500" height="400">
-				 <p>Next, right click on the wheel and select <b>multiply selected</b> and input <b>number of copies: 1</b> so that you can duplicate the wheel. Thereafter, set the
-				 printer settings to the following:</p>
+				 <p>Next, <b>multiply selected</b> is used after right clicking the piece and <b>number of copies: 1</b> is inputted so that the wheel is duplicated. Thereafter, the
+				 printer settings are set to the following:</p>
 				 <ul>
 					 <li>Remove <b>Support</b> and <b>Adhesion.</b></li>
 				 </ul>
 				 <img src="../images/FinalProjectImg/3DWheel3.jpg" alt="3D Printing 3" width="550" height="400">
 				 <img src="../images/FinalProjectImg/3DWheel4.jpg" alt="3D Printing 4" width="550" height="400">
 				 <ul>
-					 <li>Select <b>Creality CR 10-s</b> for <b>Preset Printers</b>.</li>
-					 <li>Click on <b>Custom</b> in Printer Settings and set <b>Quality: 0.28mm</b>.</li>
+					 <li><b>Creality CR 10-s</b> is used for <b>Preset Printers</b>.</li>
+					 <li>Use <b>Custom</b> in Printer Settings and set <b>Quality: 0.28mm</b>.</li>
 				 </ul>
 				 <img src="../images/FinalProjectImg/3DWheel5.jpg" alt="3D Printing 5" width="600" height="150">
 				 <img src="../images/FinalProjectImg/3DWheel6.jpg" alt="3D Printing 6" width="600" height="150">
-				 <p>Click on <b>slice</b> at the bottom right of your screen to convert the 3D model into individual layers.
-				 Then click on <b>preview</b> at the top middle to see your supports and
-				 the printing time.</p>
+				 <p><b>Slice</b> is used to convert the 3D model into individual layers and <b>preview</b>is used to see the supports and the printing time.</p>
 				 <img src="../images/FinalProjectImg/3DWheel7.jpg" alt="3D Printing 7" width="550" height="400">
 				 <img src="../images/FinalProjectImg/3DWheel8.jpg" alt="3D Printing 8" width="600" height="400">
-				 <p>After completing all these steps on Cura, save the file and copy it over to a SD Card before heading over to the printer. Insert your SD card into the
-				 printer before selecting your wheel file and watching the printer print.</p>
+				 <p>After the steps are all completed on Cura, the file is saved and copied over to a SD Card. The SD card is then inserted into the
+				 printer before the wheel file is selected and the printing process commences.</p>
 				 <video width=600px src="../images/FinalProjectImg/3DWheel.mp4" controls></video>
 				 <img src="../images/FinalProjectImg/3DWheel9.jpeg" alt="3D Printing 9" width="450" height="330">
-				 <p>After the printer is done printing, you would have to leave the wheels to cool down till around 45 degrees before removing it.</p>
+				 <p>After the printer is done printing, the wheels are left to cool down till around 45 degrees before being removed.</p>
 				 <hr>
 				 <h2>Embedded Programming</h2>
 				 <hr>
