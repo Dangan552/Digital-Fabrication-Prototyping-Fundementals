@@ -105,8 +105,8 @@ hr{
 }
 
 #main{
-	width: 1350px;
-	left: 80px;
+	width: 95%;
+	left: 5%;
 	position: relative;
 	padding: 10px;
 }
@@ -129,7 +129,7 @@ hr{
   width: 0;
   position: fixed;
 
-	top: 135px;
+	top: 19%;
   z-index: 1;
   left: 0;
   background-color: #111;
@@ -171,9 +171,4 @@ hr{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-@media screen and (max-width: 600px) {
-  #main {width: 100%;}
-  #container {width: 100%;}
 }
